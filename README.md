@@ -5,7 +5,7 @@
 PyTorch(0.4 or later)  
 Torchvision  
 tensorboardX  
-imageio(2.5.0)
+imageio(2.5.0)  
 matplotlib  
 numpy
 
