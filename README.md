@@ -1,5 +1,5 @@
 ## Center loss by PyTorch
- This is an implementation of center loss [Wen et al. A Discriminative Feature Learning Approach for Deep Face Recognition. ECCV 2016.](https://ydwen.github.io/papers/WenECCV16.pdf )
+ This is an implementation of center loss [A Discriminative Feature Learning Approach for Deep Face Recognition. ECCV 2016.](https://ydwen.github.io/papers/WenECCV16.pdf )
 
 ### Requirements:
 PyTorch(0.4 or later)  
