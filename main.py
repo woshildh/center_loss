@@ -108,13 +108,13 @@ def main():
     #开始训练
     for i in range(1,epochs+1):
         scheduler.step(epoch=i)
-        model.train()
+        net.train()
         train_acc,train_cross_loss,train_center_loss,\
             train_loss,all_feature,all_labels=\
             train(net,net_center,optimizer_model,optimizer_centerloss,\
             trainloader,i,use_gpu)
         utils.plot_features(all_feature,all_labels,classes_num,i,"./logs/images/train/train_{}.png")
-        model.eval()
+        net.eval()
         test_acc,all_feature,all_labels=test(net,testloader,i,use_gpu)
         utils.plot_features(all_feature,all_labels,classes_num,i,"./logs/images/test/test_{}.png")
         print("{} epoch end, train acc is {:.4f}, test acc is {:.4f}".format(
